@@ -1,0 +1,37 @@
+group 'com'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'war'
+
+sourceCompatibility = 1.5
+
+repositories {
+    maven {
+        url "http://maven.aliyun.com/nexus/content/groups/public"
+    }
+}
+
+dependencies {
+    /*Spring*/
+    compile "org.springframework:spring-webmvc:$springVersion"
+    compile "org.springframework:spring-context:$springVersion"
+    compile "org.springframework:spring-orm:$springVersion"
+    /*hibernate核心*/
+    compile "org.hibernate:hibernate-core:$hibernateVersion"
+    /*groovy*/
+    compile "org.codehaus.groovy:groovy-all:$groovyVersion"
+    /*JSTL*/
+    compile "javax.servlet:jstl:$jstlVersion"
+    /*thymeleaf模板*/
+    compile "org.thymeleaf:thymeleaf-spring4:$thymeleafVersion"
+    /*Spring Security安全性框架*/
+    /*阿里巴巴druid*/
+    compile group: 'com.alibaba', name: 'druid', version: '1.0.27'
+    compile "org.springframework.security:spring-security-config:$springSecurityVersion"
+    compile "org.springframework.security:spring-security-web:$springSecurityVersion"
+    providedCompile "javax.servlet:javax.servlet-api:$servletApiVersion"
+    providedCompile "javax.servlet.jsp:jsp-api:$jspApiVersion"
+    providedCompile "javax.el:javax.el-api:$jspElVersion"
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+}
