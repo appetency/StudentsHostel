@@ -19,7 +19,7 @@ import java.io.IOException;
 /*web配置*/
 @Configuration
 @EnableWebMvc   /*启用Spring MVC*/
-@ComponentScan("spittr.web") /*启用组件扫描 根据需要更改要扫描的路径*/
+@ComponentScan("web") /*启用组件扫描 根据需要更改要扫描的路径*/
 public class WebConfig extends WebMvcConfigurerAdapter {
 
   @Bean
