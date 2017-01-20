@@ -19,15 +19,24 @@ dependencies {
     compile "org.springframework:spring-orm:$springVersion"
     /*hibernate核心*/
     compile "org.hibernate:hibernate-core:$hibernateVersion"
+    compile "org.hibernate:hibernate-entitymanager:$hibernateEntityManagerVersion"
     /*groovy*/
     compile "org.codehaus.groovy:groovy-all:$groovyVersion"
     /*JSTL*/
     compile "javax.servlet:jstl:$jstlVersion"
     /*thymeleaf模板*/
     compile "org.thymeleaf:thymeleaf-spring4:$thymeleafVersion"
-    /*Spring Security安全性框架*/
+
     /*阿里巴巴druid*/
-    compile group: 'com.alibaba', name: 'druid', version: '1.0.27'
+    compile "com.alibaba:druid:$druid"
+    /*jpa*/
+    compile "org.springframework.data:spring-data-jpa:$springDataJpaVersion"
+    compile "javax.inject:javax.inject:1"
+    /*h2*/
+    compile "com.h2database:h2:$h2Version"
+    /*mysql连接*/
+    compile "mysql:mysql-connector-java:$mysqlconnector"
+    /*Spring Security安全性框架*/
     compile "org.springframework.security:spring-security-config:$springSecurityVersion"
     compile "org.springframework.security:spring-security-web:$springSecurityVersion"
     providedCompile "javax.servlet:javax.servlet-api:$servletApiVersion"
