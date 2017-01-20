@@ -18,7 +18,6 @@ dependencies {
     compile "org.springframework:spring-context:$springVersion"
     compile "org.springframework:spring-orm:$springVersion"
     /*hibernate核心*/
-    compile "org.hibernate:hibernate-core:$hibernateVersion"
     compile "org.hibernate:hibernate-entitymanager:$hibernateEntityManagerVersion"
     /*groovy*/
     compile "org.codehaus.groovy:groovy-all:$groovyVersion"

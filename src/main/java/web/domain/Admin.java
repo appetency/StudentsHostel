@@ -1,11 +1,9 @@
 package web.domain;
 
-import javax.persistence.Entity;
-
 /**
  * Created by Administrator on 2017/1/18.
  */
-@Entity
+
 public class Admin {
     private int Admin_ID ;
     private String Admin_Username ;
